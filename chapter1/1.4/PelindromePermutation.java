@@ -1,5 +1,6 @@
 /*
-	[1.4]	Write a function to check if a string is a permutation of a pelindrome
+	[1.4]	Write a function to check if a string is a permutation 
+			of a pelindrome
 */
 
 class PelindromePermutation {
@@ -18,7 +19,7 @@ class PelindromePermutation {
 		
 		boolean isOdd = (lengthNoSpaces % 2 == 1);
 		
-		for(int i=0; i< count.length; i++){
+		for(int i=0; i<count.length; i++){
 			if(count[i] != 0){
 				if(count[i] % 2 !=0 && !isOdd){
 					return false;
