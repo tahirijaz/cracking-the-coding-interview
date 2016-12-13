@@ -6,21 +6,16 @@
 
 class StringCompression {
 	private String getCompressedString(String s){
-		int counter = 1;
+		int counter = 0;
 		String compressed_str = "";
-		int i;
 		
-		for(i=0; i<s.length()-1; i++){
-			if(s.charAt(i) == s.charAt(i+1)){
-				counter++;
-			}
-			else{
+		for(int i=0; i<s.length(); i++){
+			counter++;
+			if(i+1 >= s.length() || s.charAt(i) != s.charAt(i+1)){
 				compressed_str += Character.toString(s.charAt(i)) + counter;
-				counter = 1;
+				counter = 0;
 			}
 		}
-		
-		compressed_str += Character.toString(s.charAt(i)) + counter;
 		
 		if(compressed_str.length() >= s.length())
 			return s;
