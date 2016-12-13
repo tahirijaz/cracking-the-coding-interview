@@ -1,3 +1,8 @@
+/* 	
+	[1.3]	Write a method to replace all spaces with %20. Assume you have sufficient
+			spaces at the end of the string. True length of the string is also provided
+*/
+
 class URLify {
 	private String urlify(String s, int len){
 		char[] str = s.toCharArray();
