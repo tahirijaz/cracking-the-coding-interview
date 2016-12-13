@@ -10,9 +10,8 @@ class CheckPermutation {
 		}
 		
 		for(int i=0; i< characterCount.length; i++){
-			if(characterCount[i]!=0){
+			if(characterCount[i]!=0)
 				return false;
-			}
 		}
 		return true;
 	}
