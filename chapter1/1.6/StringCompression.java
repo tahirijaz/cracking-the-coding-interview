@@ -1,7 +1,5 @@
 /* 	
-	[1.6]	Compress string aabcccccaaa -> a2b1c5a3.
-			If compressed string is not smaller return original
-			characters are [a-z] and [A-Z]
+	[1.6]	Compress string aabcccccaaa -> a2b1c5a3. If compressed string is not smaller return original characters are [a-z] and [A-Z]
 */
 
 class StringCompression {
