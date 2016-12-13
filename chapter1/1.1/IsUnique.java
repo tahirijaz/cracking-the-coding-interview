@@ -16,5 +16,6 @@ public class IsUnique{
   public static void main(String[] args){
     IsUnique unique = new IsUnique();
     System.out.println(unique.isUnique("tahir"));
+    System.out.println(unique.isUnique("tahirt"));
   }
 }
