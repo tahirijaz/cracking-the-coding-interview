@@ -13,31 +13,11 @@ class StringRotation {
 	}
 
 	public static boolean isRotation(String str1, String str2){
-		if(str1.length() != str2.length()){
+		if(str1.length() != str2.length())
 			return false;
-		}
-		
-		String rotatedString = "";
 			
-		// Problem here
-		while((i < str1.length()) && (str1.charAt(i) != str2.charAt(i2))){
-			rotatedString += str1.charAt(i);
-			i++;
-		}
-		
-		int j = i;
-		while(j < str1.length() -1){
-			if(str1.charAt(j) != str2.charAt(j))
-				return false;
-			j++;
-		}	
-		
-		System.out.println("str1: " + str2);
-		System.out.println("str2: " + rotatedString);
-		
-		if(isSubstring(str2, rotatedString))
-			return true;
-		return false;
+		String repeat_str1 = str1 + str1;
+		return isSubstring(repeat_str1, str2);
 	}
 	
 	public static void main(String[] args) {
