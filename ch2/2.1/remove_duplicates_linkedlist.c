@@ -38,7 +38,6 @@ void printList(node *head){
 }
 
 void removeDuplicates(node **head){
-	
 	if((*head)->next == NULL)
 		return;
 
