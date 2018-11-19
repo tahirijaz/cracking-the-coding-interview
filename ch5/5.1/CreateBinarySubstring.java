@@ -15,8 +15,6 @@ public class CreateBinarySubstring{
 		int num_bits = j - i;
 		int mask = ~0;
 		
-		
-		
 		printBinary(mask);
 		return mask;
 	}
