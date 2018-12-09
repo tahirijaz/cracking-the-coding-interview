@@ -47,8 +47,8 @@ public class ReturnKthLastElement{
 	}
 	
 	public static void main(String[] args){
-		ReturnKthLastElement	 r = new ReturnKthLastElement();
-		ReturnKthLastElement	.Node head = new Node(1);		
+		ReturnKthLastElement r = new ReturnKthLastElement();
+		ReturnKthLastElement.Node head = new Node(1);		
 		head = head.insertHead(head, 2);
 		head = head.insertHead(head, 3);
 		head = head.insertHead(head, 4);

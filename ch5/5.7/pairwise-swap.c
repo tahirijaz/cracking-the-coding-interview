@@ -11,13 +11,12 @@ void bin(unsigned n)
 unsigned int swap(int num){
 	unsigned int odd_mask = 0xAAAAAAAA;
 	unsigned int even_mask = 0x55555555;
-	
-	unsigned int swapped = ((num & odd_mask) >> 1) + ((num & even_mask) << 1);
+	unsigned int swapped = ((num & odd_mask) >> 1) | ((num & even_mask) << 1);
 	return swapped;
 }
 
 int main(int argc, char *argv[]) {
-	unsigned int num = 777;
+	unsigned int num = 470;
 	bin(num);
 	printf("\n");
 	unsigned int swapped = swap(num);
