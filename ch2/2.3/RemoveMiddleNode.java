@@ -50,7 +50,7 @@ public class RemoveMiddleNode{
 		
 		head.printList(head);
 		// Deleting 4th Node
-		head.deleteMiddle(head.next.next.next);
+		head.deleteMiddle(head.next);
 		head.printList(head);
 	}
 }
